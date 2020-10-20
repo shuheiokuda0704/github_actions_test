@@ -1,0 +1,12 @@
+name: manual_hello
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo hello
+        run: |
+          echo hello
